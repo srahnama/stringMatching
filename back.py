@@ -190,34 +190,52 @@ def main():
         # file.write(patterns[i])
     
         tm,lst = NaiveSearch(patterns[i],data)
-        file.write('NaiveSearch')        
-        file.write(str(i))
-        file.write(':')
-        mydic = {'type':'NaiveSearch','time':tm,'list':lst,'file':'aesop11', 'pattern':patterns[i]}
+        # file.write('"')        
+
+        # file.write('NaiveSearch')        
+        # file.write(str(i))
+        # file.write('"')        
+
+        # file.write(':')
+        mydic = {'type':'NaiveSearch','time':tm,'list':lst,'file':'aesop11', 'pattern':patterns[i], 'len':str(len(lst))}
         file.write(str(mydic))
         file.write(',')
 
         tm,lst = KMPSearch(patterns[i],data)
-        file.write('kmp')        
-        file.write(str(i))
-        file.write(':')
-        mydic = {'type':'kmp','time':tm,'list':lst,'file':'aesop11', 'pattern':patterns[i]}
+        # file.write('"')        
+
+        # file.write('kmp')        
+        # file.write(str(i))
+        # file.write('"')        
+
+        # file.write(':')
+        mydic = {'type':'kmp','time':tm,'list':lst,'file':'aesop11', 'pattern':patterns[i], 'len':str(len(lst))}
         file.write(str(mydic))
         file.write(',')
 
         tm,lst = RabinSearch(patterns[i],data)
-        file.write('RabinSearch')        
-        file.write(str(i))
-        file.write(':')
-        mydic = {'type':'RabinSearch','time':tm,'list':lst,'file':'aesop11', 'pattern':patterns[i]}
+        # file.write('"')        
+
+        # file.write('RabinSearch')        
+        # file.write(str(i))
+        # file.write('"')        
+
+        # file.write(':')
+             
+
+        mydic = {'type':'RabinSearch','time':tm,'list':lst,'file':'aesop11', 'pattern':patterns[i], 'len':str(len(lst))}
         file.write(str(mydic))
         file.write(',')
 
         tm,lst = FiniteAutomatonMatcher(patterns[i],data)
-        file.write('FiniteAutomatonMatcher')        
-        file.write(str(i))
-        file.write(':')
-        mydic = {'type':'FiniteAutomatonMatcher','time':tm,'list':lst,'file':'aesop11', 'pattern':patterns[i]}
+        # file.write('"')        
+
+        # file.write('FiniteAutomatonMatcher')        
+        # file.write(str(i))
+        # file.write('"')        
+
+        # file.write(':')
+        mydic = {'type':'FiniteAutomatonMatcher','time':tm,'list':lst,'file':'aesop11', 'pattern':patterns[i], 'len':str(len(lst))}
         file.write(str(mydic))
         file.write(',')
 
@@ -236,34 +254,50 @@ def main():
         # file.write(patterns[i])
     
         tm,lst = NaiveSearch(patterns[i],data)
-        file.write('NaiveSearch')        
-        file.write(str(i))
-        file.write(':')
-        mydic = {'type':'NaiveSearch','time':tm,'list':lst,'file':'gulliver', 'pattern':patterns[i]}
+        # file.write('"')        
+
+        # file.write('NaiveSearch')        
+        # file.write(str(i))
+        # file.write('"')        
+
+        # file.write(':')
+        mydic = {'type':'NaiveSearch','time':tm,'list':lst,'file':'gulliver', 'pattern':patterns[i], 'len':str(len(lst))}
         file.write(str(mydic))
         file.write(',')
 
         tm,lst = KMPSearch(patterns[i],data)
-        file.write('kmp')        
-        file.write(str(i))
-        file.write(':')
-        mydic = {'type':'kmp','time':tm,'list':lst,'file':'gulliver', 'pattern':patterns[i]}
+        # file.write('"')        
+
+        # file.write('kmp')        
+        # file.write(str(i))
+        # file.write('"')        
+
+        # file.write(':')
+        mydic = {'type':'kmp','time':tm,'list':lst,'file':'gulliver', 'pattern':patterns[i], 'len':str(len(lst))}
         file.write(str(mydic))
         file.write(',')
 
         tm,lst = RabinSearch(patterns[i],data)
-        file.write('RabinSearch')        
-        file.write(str(i))
-        file.write(':')
-        mydic = {'type':'RabinSearch','time':tm,'list':lst,'file':'gulliver', 'pattern':patterns[i]}
+        # file.write('"')        
+
+        # file.write('RabinSearch')        
+        # file.write(str(i))
+        # file.write('"')        
+
+        # file.write(':')
+        mydic = {'type':'RabinSearch','time':tm,'list':lst,'file':'gulliver', 'pattern':patterns[i], 'len':str(len(lst))}
         file.write(str(mydic))
         file.write(',')
 
         tm,lst = FiniteAutomatonMatcher(patterns[i],data)
-        file.write('FiniteAutomatonMatcher')        
-        file.write(str(i))
-        file.write(':')
-        mydic = {'type':'FiniteAutomatonMatcher','time':tm,'list':lst,'file':'gulliver', 'pattern':patterns[i]}
+        # file.write('"')        
+
+        # file.write('FiniteAutomatonMatcher')        
+        # file.write(str(i))
+        # file.write('"')        
+
+        # file.write(':')
+        mydic = {'type':'FiniteAutomatonMatcher','time':tm,'list':lst,'file':'gulliver', 'pattern':patterns[i], 'len':str(len(lst))}
         file.write(str(mydic))
         file.write(',')
 
@@ -281,34 +315,50 @@ def main():
         # file.write(patterns[i])
     
         tm,lst = NaiveSearch(patterns[i],data)
-        file.write('NaiveSearch')        
-        file.write(str(i))
-        file.write(':')
-        mydic = {'type':'NaiveSearch','time':tm,'list':lst,'file':'hitch2', 'pattern':patterns[i]}
+        # file.write('"')        
+
+        # file.write('NaiveSearch')        
+        # file.write(str(i))
+        # file.write('"')        
+
+        # file.write(':')
+        mydic = {'type':'NaiveSearch','time':tm,'list':lst,'file':'hitch2', 'pattern':patterns[i], 'len':str(len(lst))}
         file.write(str(mydic))
         file.write(',')
 
         tm,lst = KMPSearch(patterns[i],data)
-        file.write('kmp')        
-        file.write(str(i))
-        file.write(':')
-        mydic = {'type':'kmp','time':tm,'list':lst,'file':'hitch2', 'pattern':patterns[i]}
+        # file.write('"')        
+
+        # file.write('kmp')        
+        # file.write(str(i))
+        # file.write('"')        
+
+        # file.write(':')
+        mydic = {'type':'kmp','time':tm,'list':lst,'file':'hitch2', 'pattern':patterns[i], 'len':str(len(lst))}
         file.write(str(mydic))
         file.write(',')
 
         tm,lst = RabinSearch(patterns[i],data)
-        file.write('RabinSearch')        
-        file.write(str(i))
-        file.write(':')
-        mydic = {'type':'RabinSearch','time':tm,'list':lst,'file':'hitch2', 'pattern':patterns[i]}
+        # file.write('"')        
+
+        # file.write('RabinSearch')        
+        # file.write(str(i))
+        # file.write('"')        
+
+        # file.write(':')
+        mydic = {'type':'RabinSearch','time':tm,'list':lst,'file':'hitch2', 'pattern':patterns[i], 'len':str(len(lst))}
         file.write(str(mydic))
         file.write(',')
 
         tm,lst = FiniteAutomatonMatcher(patterns[i],data)
-        file.write('FiniteAutomatonMatcher')        
-        file.write(str(i))
-        file.write(':')
-        mydic = {'type':'FiniteAutomatonMatcher','time':tm,'list':lst,'file':'hitch2', 'pattern':patterns[i]}
+        # file.write('"')        
+
+        # file.write('FiniteAutomatonMatcher')        
+        # file.write(str(i))
+        # file.write('"')        
+
+        # file.write(':')
+        mydic = {'type':'FiniteAutomatonMatcher','time':tm,'list':lst,'file':'hitch2', 'pattern':patterns[i], 'len':str(len(lst))}
         file.write(str(mydic))
         file.write(',')
 
@@ -327,34 +377,50 @@ def main():
         # file.write(patterns[i])
     
         tm,lst = NaiveSearch(patterns[i],data)
-        file.write('NaiveSearch')        
-        file.write(str(i))
-        file.write(':')
-        mydic = {'type':'NaiveSearch','time':tm,'list':lst,'file':'hound-b', 'pattern':patterns[i]}
+        # file.write('"')        
+
+        # file.write('NaiveSearch')        
+        # file.write(str(i))
+        # file.write('"')        
+
+        # file.write(':')
+        mydic = {'type':'NaiveSearch','time':tm,'list':lst,'file':'hound-b', 'pattern':patterns[i], 'len':str(len(lst))}
         file.write(str(mydic))
         file.write(',')
 
         tm,lst = KMPSearch(patterns[i],data)
-        file.write('kmp')        
-        file.write(str(i))
-        file.write(':')
-        mydic = {'type':'kmp','time':tm,'list':lst,'file':'hound-b', 'pattern':patterns[i]}
+        # file.write('"')        
+
+        # file.write('kmp')        
+        # file.write(str(i))
+        # file.write('"')        
+        
+        # file.write(':')
+        mydic = {'type':'kmp','time':tm,'list':lst,'file':'hound-b', 'pattern':patterns[i], 'len':str(len(lst))}
         file.write(str(mydic))
         file.write(',')
 
         tm,lst = RabinSearch(patterns[i],data)
-        file.write('RabinSearch')        
-        file.write(str(i))
-        file.write(':')
-        mydic = {'type':'RabinSearch','time':tm,'list':lst,'file':'hound-b', 'pattern':patterns[i]}
+        # file.write('"')        
+
+        # file.write('RabinSearch')        
+        # file.write(str(i))
+        # file.write('"')        
+
+        # file.write(':')
+        mydic = {'type':'RabinSearch','time':tm,'list':lst,'file':'hound-b', 'pattern':patterns[i], 'len':str(len(lst))}
         file.write(str(mydic))
         file.write(',')
 
         tm,lst = FiniteAutomatonMatcher(patterns[i],data)
-        file.write('FiniteAutomatonMatcher')        
-        file.write(str(i))
-        file.write(':')
-        mydic = {'type':'FiniteAutomatonMatcher','time':tm,'list':lst,'hound-b':'hitch2', 'pattern':patterns[i]}
+        # file.write('"')        
+
+        # file.write('FiniteAutomatonMatcher')        
+        # file.write(str(i))
+        # file.write('"')        
+
+        # file.write(':')
+        mydic = {'type':'FiniteAutomatonMatcher','time':tm,'list':lst,'file':'hound-b', 'pattern':patterns[i], 'len':str(len(lst))}
         file.write(str(mydic))
         file.write(',')
 
